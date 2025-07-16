@@ -1,0 +1,68 @@
+Perfect — this will really help you write natural Python instead of “translated Dart/Java.”
+Here’s a ✏ cheat sheet:
+
+✅ Python vs Dart / Java / TS habits
+Task	Dart / Java / TS style	Python idiomatic style
+Loop over indices	for (int i=0; i<list.length; i++)	for i in range(len(list)):
+Loop over elements	for (var item in list)	for item in list:
+Multiple OR checks	`if (c=='a'	
+Add to list	list.add(x)	list.append(x)
+Declare empty list	List<int> nums = []	nums = []
+Declare empty set	Set<String> s = {}	s = set()
+Check membership	if (x in list)	if x in list:
+Function	void sayHello() { }	def say_hello():
+Return	return x;	return x
+String interpolation	"Hello, $name"	f"Hello, {name}"
+Get length	list.length	len(list)
+Comments	// single line	# single line
+Multiline comment	/* ... */	""" ... """ (docstring or multiline)
+Range loop (e.g. 0–4)	for (int i=0;i<5;i++)	for i in range(5):
+Reverse string	str.split('').reversed.join()	str[::-1] or loop manually
+Max in list	list.reduce(max)	max(list)
+Sum in list	list.reduce((a,b)=>a+b)	sum(list)
+Dict (map)	Map<String,int> m={'a':1}	m = {'a':1}
+Get value safely	m['key'] ?? 0	m.get('key', 0)
+
+⚡ Python extra idiomatic things:
+✅ You rarely loop by index; you loop over items directly:
+
+python
+Copy
+Edit
+for c in word:
+    print(c)
+✅ Use enumerate if you need index and value:
+
+python
+Copy
+Edit
+for i, c in enumerate(word):
+    print(f"Index {i}: {c}")
+✅ Use list comprehensions for short loops:
+
+python
+Copy
+Edit
+squares = [x*x for x in range(5)]
+
+
+✅ You rarely loop by index; you loop over items directly:
+
+python
+Copy
+Edit
+for c in word:
+    print(c)
+✅ Use enumerate if you need index and value:
+
+python
+Copy
+Edit
+for i, c in enumerate(word):
+    print(f"Index {i}: {c}")
+✅ Use list comprehensions for short loops:
+
+python
+Copy
+Edit
+squares = [x*x for x in range(5)]
