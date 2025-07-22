@@ -24,58 +24,42 @@
       ...
   ```
 
-Day 02 — Collections & Functions
-✅ Lists
-Created list: numbers = [10, 20, 30]
+## ✅ Day 02 — Collections & Functions
 
-Appended items with numbers.append(40)
+### ✅ Lists
 
-Loop over items: for n in numbers
+- Created list: `numbers = [10, 20, 30]`
+- Appended items with `numbers.append(40)`
+- Loop over items: `for n in numbers`
+- Loop by index: `for i in range(len(numbers))`
+- Wrote manual `sum_list` and `find_max` functions
 
-Loop by index: for i in range(len(numbers))
+---
 
-Wrote sum and find max functions manually.
+### ✅ Tuples
 
-✅ Tuples
-Immutable ordered collections.
+- Immutable ordered collections
+- Cannot change, append, or remove after creation
 
-Cannot change, append, or remove after creation.
+---
 
-✅ Sets
-Unique, unordered collection.
+### ✅ Sets
 
-Used add() to insert.
+- Unique, unordered collections
+- Used `add()` to insert
+- Used `not in` to manually avoid duplicates
+- Understood: set automatically keeps only unique items
 
-Used not in to manually avoid duplicates.
+---
 
-Understood set automatically removes duplicates.
+### ✅ Dictionaries
 
-✅ Dictionaries
-Key–value pairs: {'name': 'Rajender', 'age': 26}
-
-Access: person['name']
-
-Safe access: person.get('name')
-
-Add new key: person['email'] = ...
-
-Loop with:
-
-python
-Copy
-Edit
-for key, val in person.items():
-print(key, val)
-✅ Small Project
-Simple Movie Stats App
-List of dicts for movies.
-
-Printed movie details.
-
-Found highest rated movie.
-
-Summed total ratings.
-
-Counted movies after 2015.
-
-Collected unique first letters into a set.
+- Key–value pairs: `{'name': 'Rajender', 'age': 26}`
+- Access: `person['name']`
+- Safe access: `person.get('name')`
+- Add new key: `person['email'] = ...`
+- Loop with:
+  ```python
+  for key, val in person.items():
+      print(key, val)
+  ```
