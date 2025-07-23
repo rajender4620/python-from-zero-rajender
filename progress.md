@@ -17,8 +17,9 @@
 
 ### ✅ Functions
 
-- Defined a function with `def`  
+- Defined a function with `def`
   Example:
+
   ```python
   def reverse_string(s):
       ...
@@ -59,7 +60,37 @@
 - Safe access: `person.get('name')`
 - Add new key: `person['email'] = ...`
 - Loop with:
+
   ```python
   for key, val in person.items():
       print(key, val)
   ```
+
+---
+
+## ✅ Day 08 — Profile Manager Project
+
+### ✅ Built interactive menu-driven app
+
+- Menu using `while True` loop
+- CRUD operations on dictionary values
+- Handled `list` fields like `skills`
+- Used `isinstance(val, list)` to check type
+- Handled editing non-list fields like name, age, email
+- Used `.append()` and `.remove()` for skill updates
+- Gracefully handled invalid inputs and exits
+
+### ✅ Sample logic:
+
+```python
+if isinstance(val, list):
+    for item in val:
+        print("-", item)
+```
+
+### ✅ Learned:
+
+- Type checking
+- Dictionary updates
+- Nested conditionals in menu logic
+- Input validation basics

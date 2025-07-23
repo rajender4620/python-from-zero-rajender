@@ -26,8 +26,17 @@ while True:
                 print(f"{key.capitalize()}: {val}")
 
     elif task == 2:
-        filed = input('which one you want to edit (name/age/email) :')
-        print(filed)
+        field = input('which one you want to edit (name/age/email) :')
+        if field in user and not isinstance(user[field], list):
+            new_val = input(f'enter the new value for {field}')
+            if field == 'age':
+                user[field] = int(new_val)
+            if field == 'name':
+                user[field] = new_val
+            if field == 'email':
+                user[field] = new_val
+        else:
+            print("❌ Invalid field.")
     elif task == 3:
         new_skill = input("Enter skill to add: ")
         user["skills"].append(new_skill)
