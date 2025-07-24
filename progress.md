@@ -1,96 +1,94 @@
-# 📦 Python Learning Progress – Rajender
+from pathlib import Path
+
+# Define the markdown content
+
+md_content = """# 📦 Python Learning Progress – Rajender
 
 ## ✅ Day 01 — Basics
 
 ### ✅ Variables & Types
 
-- Learned to declare variables dynamically (no type keywords like Dart)
-- `name = "demon slayer"`
+- Declared variables dynamically (no type keywords like Dart)
 - Used `type()` to check variable types
 
 ### ✅ Printing
 
-- Used `print(name)`
-- Printed multiple items: `print(type(releasedData), name)`
+- Used `print(name)` and printed multiple items
+- Example: `print(type(releasedData), name)`
 
 ---
-
-### ✅ Functions
-
-- Defined a function with `def`
-  Example:
-
-  ```python
-  def reverse_string(s):
-      ...
-  ```
 
 ## ✅ Day 02 — Collections & Functions
 
 ### ✅ Lists
 
 - Created list: `numbers = [10, 20, 30]`
-- Appended items with `numbers.append(40)`
-- Loop over items: `for n in numbers`
-- Loop by index: `for i in range(len(numbers))`
-- Wrote manual `sum_list` and `find_max` functions
-
----
+- Used `.append()` to add items
+- Loop over values and indices using `for` and `range(len(...))`
+- Wrote custom functions like `sum_list`, `find_max`
 
 ### ✅ Tuples
 
 - Immutable ordered collections
-- Cannot change, append, or remove after creation
-
----
+- Can't add/remove after creation
 
 ### ✅ Sets
 
-- Unique, unordered collections
-- Used `add()` to insert
-- Used `not in` to manually avoid duplicates
-- Understood: set automatically keeps only unique items
-
----
+- Unique, unordered items
+- Used `.add()` and `not in` to avoid duplicates
+- Set removes duplicates automatically
 
 ### ✅ Dictionaries
 
-- Key–value pairs: `{'name': 'Rajender', 'age': 26}`
-- Access: `person['name']`
-- Safe access: `person.get('name')`
-- Add new key: `person['email'] = ...`
-- Loop with:
-
-  ```python
-  for key, val in person.items():
-      print(key, val)
-  ```
+- Key-value pairs
+- Accessed with `[]` and `.get()`
+- Modified by assigning new keys/values
+- Looped with `.items()`
 
 ---
 
 ## ✅ Day 08 — Profile Manager Project
 
-### ✅ Built interactive menu-driven app
+### ✅ Built an interactive menu app
 
-- Menu using `while True` loop
-- CRUD operations on dictionary values
+- Used `while True` for menu
+- CRUD on dictionary fields
 - Handled `list` fields like `skills`
-- Used `isinstance(val, list)` to check type
-- Handled editing non-list fields like name, age, email
-- Used `.append()` and `.remove()` for skill updates
-- Gracefully handled invalid inputs and exits
+- Checked type using `isinstance(val, list)`
+- Appended/removed from list
+- Validated input
 
-### ✅ Sample logic:
+### ✅ Concepts reinforced:
 
-```python
-if isinstance(val, list):
-    for item in val:
-        print("-", item)
-```
+- Type checks
+- Conditional logic inside loops
+- Error handling and user interaction
 
-### ✅ Learned:
+---
 
-- Type checking
-- Dictionary updates
-- Nested conditionals in menu logic
-- Input validation basics
+## ✅ Day 09 — Files: Read & Write
+
+### ✅ `with open(...)` for file handling
+
+- Wrote to files: `'w'`, `'a'`
+- Read with `'r'`
+- Stripped newlines using `.strip()`
+- Handled line-by-line reading
+
+### ✅ Mini-Project: Smart Life Manager
+
+- Managed goals, skills, habits
+- Stored data in separate `.txt` files
+
+---
+
+## ✅ Day 10 — Modules & Imports
+
+### ✅ Modularization
+
+- Split project into:
+  - `main.py`, `goals_module.py`, `skills_module.py`, etc.
+- Imported functions using:
+  ```python
+  from goals_module import add_goal
+  ```
