@@ -1,0 +1,13 @@
+
+thonny IDE is used for begineers for debugging the python code
+
+
+mathemetical operations
+PEDMASLR
+Peranthasis, Exponents, Division/Multiplication, Additio/Substraction, Left to Right
+
+() => P
+** => Exponents
+/ => Division OR * => Multiplication
++ => Addition OR - => Substraction
+
